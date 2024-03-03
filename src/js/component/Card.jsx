@@ -1,19 +1,20 @@
 import React from "react";
 
-const Card=()=>{
+const Card=(props)=>{
 
-    return <div className="col">
-        <div class="card" style={{width: "18rem"}}>
-    <img src="https://commandcenter.sukoharjokab.go.id/peta/assets/frontend/img/our-office-8.jpg" class="card-img-top" alt="..."></img>
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <div class="card-footer bg-transparent">
-      <a href="#" class="btn btn-primary">Find Out More!</a>
+    return <div classNameName="col">
+        <div className="card h-100" >
+    <img src="https://commandcenter.sukoharjokab.go.id/peta/assets/frontend/img/our-office-8.jpg" className="card-img-top" alt="..."></img>
+    <div className="card-body">
+      <h5 className="card-title">Card title</h5>
+      <p className="card-text">{props.body}</p>
+      </div>
+      <div className="card-footer bg-transparent">
+      <a href="#" className="btn btn-primary">Find Out More!</a>
     </div>
     </div>
   </div>
-  </div>
+  
 }
 
 
